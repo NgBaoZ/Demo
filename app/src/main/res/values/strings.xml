@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string-array name="Tile_anime_txt">
+        <item>Bocchi The Rock</item>
+    </string-array>
+    <string-array name="Tile_Studio_txt">
+        <item>CloverWorks</item>
+    </string-array>
+    <string-array name="Tile_namsx">
+        <item>2022</item>
+    </string-array>
+</resources>
