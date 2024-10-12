@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/blueBlack"
     android:padding="8dp">
 
     <!-- CardView 1: Tiêu đề và ảnh đại diện phim -->
@@ -42,7 +43,7 @@
             <ImageView
                 android:id="@+id/staggered_image"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="400dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/img"
                 app:layout_constraintTop_toBottomOf="@id/staggered_title" />

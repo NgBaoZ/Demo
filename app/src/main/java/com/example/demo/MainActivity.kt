@@ -1,9 +1,13 @@
 package com.example.demo
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.demo.Real_Stagger.MainActivity3
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var studio: ArrayList<String>
     lateinit var year: ArrayList<String>
     lateinit var chitiet: ArrayList<String>
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,9 +62,19 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
-
         newanimeList = ArrayList<Anime>()
+
+
         getUserdata()
+
+        val buttonGoToMain3: FloatingActionButton = findViewById(R.id.my_button)
+        buttonGoToMain3.setOnClickListener {
+            // Tạo Intent để chuyển đến MainActivity3
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
     private fun getUserdata() {

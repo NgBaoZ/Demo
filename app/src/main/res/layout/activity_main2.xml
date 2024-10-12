@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blueBlack"
-    tools:context=".Stagger.MainActivity2">
+    tools:context=".Not_Stagger.MainActivity2">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/staggeredRecyclerView"
